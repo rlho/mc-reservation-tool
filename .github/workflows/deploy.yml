@@ -23,4 +23,7 @@ jobs:
       - name: Deploy to Google Apps Script
         run: |
           cd media_commons_booking_app
+          echo "$CLASP_CREDENTIALS" > .clasprc.json
           npx clasp push
+        env:
+          CLASP_CREDENTIALS: ${{ secrets.CLASP_CREDENTIALS }}
