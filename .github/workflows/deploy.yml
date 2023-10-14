@@ -20,7 +20,8 @@ jobs:
           cd media_commons_booking_app
           npm ci
       - name: Set up clasp authentication
-          run: echo "$CLASP_CREDENTIALS" > ~/.clasprc.json
+          run: |
+            echo "$CLASP_CREDENTIALS" > ~/.clasprc.json
           env:
             CLASP_CREDENTIALS: ${{ secrets.CLASP_CREDENTIALS }}
 
