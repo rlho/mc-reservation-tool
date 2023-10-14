@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to Google Apps Script
         run: |
           cd media_commons_booking_app
-          npx clasp push
+          npm run deploy
