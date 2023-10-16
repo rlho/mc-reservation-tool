@@ -1,4 +1,4 @@
-name: Deploy to Google Apps Script
+name: Deploy to Google Apps Script for development
 
 on: push
 
@@ -24,3 +24,4 @@ jobs:
         run: |
           cd media_commons_booking_app
           npx clasp push
+          npx clasp deploy --deploymentId AKfycby6DWUvOJ-r6Qtq7WR734GWvw_ng5ZquXGacOVRwW-6iQh4OP7V_up8HAClkrsvtYfuWw
