@@ -28,3 +28,7 @@ jobs:
         run: |
           cd media_commons_booking_app
           npm run deploy
+      - name: Create new version and push
+        run: |
+          cd media_commons_booking_app
+          clasp deploy -d "github workflow test"
