@@ -3,6 +3,7 @@
     "types": ["gas-types-detailed"],
     "jsx": "react",
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node"
   }
 }
