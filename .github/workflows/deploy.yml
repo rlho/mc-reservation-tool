@@ -1,4 +1,4 @@
-name: Deploy to Google Apps Script
+name: Deploy to Google Apps Script for noah
 
 on: push
 
@@ -24,7 +24,7 @@ jobs:
           echo "$CLASP_CREDENTIALS" > ~/.clasprc.json
         env:
           CLASP_CREDENTIALS: ${{ secrets.CLASP_CREDENTIALS }}
-      - name: Deploy to Google Apps Script
+      - name: Push to Google Apps Script
         run: |
           cd media_commons_booking_app
           npm run deploy
@@ -32,3 +32,4 @@ jobs:
         run: |
           cd media_commons_booking_app
           clasp deploy -d "github workflow test"
+          npx clasp deploy --deploymentId AKfycbxmvvwZQeYuYoP-J-ZFnrqdgyGHdb1COqqHT0ax6On_iO7oWicnk4fV1aig0hX7BMKOAA -d "riho test"
